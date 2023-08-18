@@ -21,6 +21,7 @@ export default class List extends Component {
     });
   }
 
+  // Component is gone, so we don't need to keep subscribe the data anymore.
   componentWillUnmount() {
     PubSub.unsubscribe(this.token);
   }
